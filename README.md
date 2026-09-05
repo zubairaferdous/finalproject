@@ -51,6 +51,7 @@ this is the core of the entire project. the functions are:
 before every action,a copy of the image is created to provide the undo feature. 
 in the end, the program frees all the memories before closing.
 
+<img width="1822" height="1028" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/55056c58-5183-45be-9f18-5fa5bfc44301" />
 
 
 
