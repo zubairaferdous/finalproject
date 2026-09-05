@@ -8,12 +8,12 @@ handles the graphical user interface. also contains the local variable in which 
 takes input through iup's dialogue box. 
 
 image.c and image.h:
- -)contains the struct data types declaration(image and pixel) in which the image is kept.
- -)pixel is a 3byte struct which stores rgb value of a single pixel
- -)image keeps track of the height,width and contains an array of pixel(which we treat as an 2d array with the help of pointer arythmatics)
- -)they also contain header and infoheader data type to read and store the first 54 Header bytes of bmp
- -)they have the save,copy(to undo) and freeing functions declared inside them. 
- -)we skip over the offset bytes and take the entire image in top to bottom styel(unlike how it's originally saved
+ ->contains the struct data types declaration(image and pixel) in which the image is kept.
+ ->pixel is a 3byte struct which stores rgb value of a single pixel
+ ->image keeps track of the height,width and contains an array of pixel(which we treat as an 2d array with the help of pointer arythmatics)
+ ->they also contain header and infoheader data type to read and store the first 54 Header bytes of bmp
+ ->they have the save,copy(to undo) and freeing functions declared inside them. 
+ ->we skip over the offset bytes and take the entire image in top to bottom styel(unlike how it's originally saved
   inside the bmp file) ,in rgb format, inside an array(pointer) of pixel struct. which is then later passed to different
   functions as necessary
 
